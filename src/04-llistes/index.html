@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head lang="cat">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>M09: Activitat llistes HTML5 | Carlos Capó</title>
+    <meta name="description" content="Activitat de llistes a HTML5 del mòdul 09, disseny d'interfícies web, del curs DAWe2 a l'ITB. Fet per Carlos Capó Forcada.">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+        line-height: 1.2;
+        width: min(100% - 4rem, 1200px);
+        margin-inline: auto;
+      }
+
+      header {
+        margin-bottom: 1.25rem;
+        padding-block: 1.25rem;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      dl dt {
+        font-weight: 600;
+      }
+
+      dl dd {
+        margin-left: 1rem;
+        margin-bottom: .5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Activitat de llistes a HTML5</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Passos per fer una recepta</h2>
+
+        <ol>
+          <li>Comprar ingredients</li>
+          <li>Preparar els ingredients</li>
+          <li>Cuinar la recepta</li>
+          <li>Servir el plat</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Ingredients necessaris</h2>
+
+        <ul>
+          <li>Farina</li>
+          <li>Ous</li>
+          <li>Llet</li>
+          <li>Sucre</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Terminología de Cuina</h2>
+
+        <dl>
+          <dt>Sofregir</dt>
+          <dd>Cuinar un aliment a foc mitjà-alt amb oli fins que estigui daurat.</dd>
+
+          <dt>Fornejar</dt>
+          <dd>Cuinar al forn a una temperatura específica.</dd>
+
+          <dt>Batre</dt>
+          <dd>Barrejar ingredients ràpidament per incorporar aire.</dd>
+        </dl>
+      </section>
+    </main>
+  </body>
+</html>
