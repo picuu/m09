@@ -10,6 +10,8 @@
   <meta name="color-scheme" content="dark light">
 
   <link rel="stylesheet" href="./style.css">
+
+  <script src="./main.js" defer></script>
 </head>
 <body>
   <header>
@@ -50,48 +52,60 @@
           <div class="img-container">
             <img src="https://www.hubspot.com/hs-fs/hubfs/html-projects.png?width=595&height=400&name=html-projects.png" alt="HTML projects portrait" />
           </div>
-          <h3>Proyecto 1</h3>
-          <p>Descripción del proyecto 1</p>
+          <div class="project-info">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1</p>
+          </div>
         </article>
 
         <article>
           <div class="img-container">
             <img src="https://www.wscubetech.com/blog/wp-content/uploads/2023/12/html-projects-for-beginners.webp" alt="HTML projects portrait" />
           </div>
-          <h3>Proyecto 2</h3>
-          <p>Descripción del proyecto 2</p>
+          <div class="project-info">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2</p>
+          </div>
         </article>
 
         <article>
           <div class="img-container">
             <img src="https://www.hubspot.com/hs-fs/hubfs/html-projects.png?width=595&height=400&name=html-projects.png" alt="HTML projects portrait" />
           </div>
-          <h3>Proyecto 3</h3>
-          <p>Descripción del proyecto 3</p>
+          <div class="project-info">
+            <h3>Proyecto 3</h3>
+            <p>Descripción del proyecto 3</p>
+          </div>
         </article>
 
         <article>
           <div class="img-container">
             <img src="https://www.wscubetech.com/blog/wp-content/uploads/2023/12/html-projects-for-beginners.webp" alt="HTML projects portrait" />
           </div>
-          <h3>Proyecto 4</h3>
-          <p>Descripción del proyecto 4</p>
+          <div class="project-info">
+            <h3>Proyecto 4</h3>
+            <p>Descripción del proyecto 4</p>
+          </div>
         </article>
 
         <article>
           <div class="img-container">
             <img src="https://www.hubspot.com/hs-fs/hubfs/html-projects.png?width=595&height=400&name=html-projects.png" alt="HTML projects portrait" />
           </div>
-          <h3>Proyecto 5</h3>
-          <p>Descripción del proyecto 5</p>
+          <div class="project-info">
+            <h3>Proyecto 5</h3>
+            <p>Descripción del proyecto 5</p>
+          </div>
         </article>
 
         <article>
           <div class="img-container">
             <img src="https://www.wscubetech.com/blog/wp-content/uploads/2023/12/html-projects-for-beginners.webp" alt="HTML projects portrait" />
           </div>
-          <h3>Proyecto 6</h3>
-          <p>Descripción del proyecto 6</p>
+          <div class="project-info">
+            <h3>Proyecto 6</h3>
+            <p>Descripción del proyecto 6</p>
+          </div>
         </article>
       </div>
     </section>
@@ -101,47 +115,49 @@
       <p>¿Tienes alguna pregunta o sugerencia? ¡Escríbeme!</p>
 
       <div class="section-content">
-        <form>
+        <form id="contact-form">
           <section>
             <label>
-              <span>Nombre</span>
-              <input type="text" name="name" maxlength="10" required>
+              <span>Nombre<span class="required">*</span></span>
+              <input type="text" name="name" maxlength="20" required>
             </label>
   
             <label>
-              <span>Email</span>
+              <span>Email<span class="required">*</span></span>
               <input type="email" name="email" required>
             </label>
           </section>
 
           <section>
             <label>
-              <span>Asunto</span>
+              <span>Asunto<span class="required">*</span></span>
               <input type="text" name="title" maxlength="40" required>
             </label>
           </section>
 
           <section>
             <label>
-              <span>Mensaje</span>
-              <textarea name="message" required></textarea>
+              <span>Mensaje<span class="required">*</span></span>
+              <textarea name="message" maxlength="1000" required></textarea>
             </label>
           </section>
 
-          <button type="submit" disabled>Enviar</button>
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <ul>
-      <li><a href="https://linkedin.com/in/carloscapo" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      <li><a href="https://github.com/picuu" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-    </ul>
-    
-    <small>Copyright © 2024 - Carlos Capó Forcada</small>
+    <div class="footer-content">
+      <ul>
+        <li><a href="https://linkedin.com/in/carloscapo" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/picuu" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      </ul>
+      
+      <small>Copyright © 2024 - Carlos Capó Forcada</small>
+    </div>
   </footer>
 </body>
 </html>
