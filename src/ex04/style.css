@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  list-style: 1.2;
+}
+
+article {
+  width: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(175 175 175 / .15);
+  border: 1px solid rgba(100 100 100 / .15);
+  border-radius: .5rem;
+}
+
+button {
+  padding: .25rem .65rem;
+  background-color: rgba(255 255 255 / .5);
+  border: 1px solid rgba(50 50 50 / .15);
+  border-radius: .25rem;
+  cursor: pointer;
+}

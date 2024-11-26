@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 90dvh;
+  width: calc(100% - 4rem);
+  margin-inline: auto;
+}
+
+body,
+input,
+button {
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  list-style: 1.2;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+header {
+  text-align: center;
+  color: #212121;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 625px;
+  background-color: #000;
+  border: 8px solid #833ab4;
+  border-radius: .75rem;
+}
+
+.msg-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: .125rem;
+  padding: .5rem;
+  padding-bottom: 3rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.msg {
+  width: fit-content;
+  padding: .6rem 1.125rem;
+  background-color: #0084ff;
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4);
+  background-size: 300%;
+  background-position: 1% 0;
+  border: 1px solid rgba(100 100 100 / .15);
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+  color: rgb(245, 245, 245);
+  font-size: .925rem;
+}
+
+.msg:first-of-type {
+  border-top-right-radius: 5.25rem;
+}
+
+.msg:last-of-type {
+  border-bottom-right-radius: 5.25rem;
+}
+
+.msg.recived {
+  margin-right: auto;
+  background: rgba(50 50 50 / .75);
+  border-top-right-radius: 5.25rem;
+  border-bottom-right-radius: 5.25rem;
+  border-top-left-radius: 5.5rem;
+  border-bottom-left-radius: 5.5rem;
+}
+
+form {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: .3rem .5rem;
+}
+
+form input {
+  width: 100%;
+  padding: .6rem 1rem;
+  background-color: rgba(75 75 75 / .65);
+  backdrop-filter: blur(10px);
+  border: none;
+  outline: none;
+  border-radius: 999vw;
+  color: #eee;
+}
+
+form input::placeholder {
+  color: rgba(180 180 180 / .8);
+}
+
+form button {
+  position: absolute;
+  top: 9px;
+  right: 14px;
+  padding: .35rem .8rem;
+  background-color: #405de6;
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4);
+  background-size: 300%;
+  background-position: 1% 0;
+  border: none;
+  outline: none;
+  border-radius: 999vw;
+  color: #fff;
+  cursor: pointer;
+}
