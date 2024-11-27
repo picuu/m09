@@ -16,3 +16,9 @@ A continuació, es detallen les branques corresponents a cada activitat.
 ```bash
 git clone --single-branch --branch activitats-html-semantic https://github.com/picuu/m09
 ```
+
+- **[Exercicis Model Caixa](https://github.com/picuu/m09/tree/model-caixa)**
+
+```bash
+git clone --single-branch --branch model-caixa https://github.com/picuu/m09
+```
