@@ -24,8 +24,19 @@
             </label>
 
             <button type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.2-5.2m0 0A7.5 7.5 0 1 0 5.2 5.2a7.5 7.5 0 0 0 10.6 10.6Z" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="size-6"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.2-5.2m0 0A7.5 7.5 0 1 0 5.2 5.2a7.5 7.5 0 0 0 10.6 10.6Z"
+                />
               </svg>
             </button>
           </form>
@@ -33,7 +44,14 @@
 
         <div class="user-menu">
           <a class="notifications-ring">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -51,16 +69,110 @@
     </header>
 
     <div class="content-wrapper">
-      <main></main>
-
-      <nav>
+      <nav class="navigation">
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#stats">Stats</a>
         <a href="#config">Configuration</a>
       </nav>
+
+      <main>
+        <div class="main-content">
+          <section class="tasks-progress">
+            <h2>Tasks progress</h2>
+
+            <div class="section-content">
+              <article>
+                <h3>Task 1</h3>
+                <progress value="50" max="100">50%</progress>
+              </article>
+
+              <article>
+                <h3>Task 2</h3>
+                <progress value="31" max="100">31%</progress>
+              </article>
+
+              <article>
+                <h3>Task 3</h3>
+                <progress value="78" max="100">69%</progress>
+              </article>
+
+              <article>
+                <h3>Task 4</h3>
+                <progress value="78" max="100">84%</progress>
+              </article>
+            </div>
+          </section>
+
+          <section class="general-stats">
+            <h2>General stats</h2>
+
+            <div class="section-content">
+              <article>
+                <h3>Graphic 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim aspernatur laudantium magni, nihil, autem
+                  dignissimos earum quae quis quisquam quod odit, consectetur iusto pariatur at! Cum iusto architecto eius.
+                </p>
+              </article>
+
+              <article>
+                <h3>Graphic 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim aspernatur laudantium magni, nihil, autem
+                  dignissimos earum quae quis quisquam quod odit, consectetur iusto pariatur at! Cum iusto architecto eius.
+                </p>
+              </article>
+
+              <article>
+                <h3>Graphic 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim aspernatur laudantium magni, nihil, autem
+                  dignissimos earum quae quis quisquam quod odit, consectetur iusto pariatur at! Cum iusto architecto eius.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <aside class="notifications">
+          <h2>Notifications</h2>
+
+          <div class="section-content">
+            <div class="notification">
+              <span class="title">New notification</span>
+              <p class="description">Notification description here...</p>
+              <time datetime="2024-11-28 18:59:07">18:59</time>
+            </div>
+
+            <div class="notification">
+              <span class="title">New notification</span>
+              <p class="description">Notification description here...</p>
+              <time datetime="2024-11-28 18:31:09">18:31</time>
+            </div>
+
+            <div class="notification">
+              <span class="title">New notification</span>
+              <p class="description">Notification description here...</p>
+              <time datetime="2024-11-28 18:04:35">18:04</time>
+            </div>
+
+            <div class="notification">
+              <span class="title">New notification</span>
+              <p class="description">Notification description here...</p>
+              <time datetime="2024-11-28 17:55:40">17:55</time>
+            </div>
+          </div>
+        </aside>
+      </main>
     </div>
 
-    <footer></footer>
+    <footer>
+      <nav>
+        <a href="#">Help</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </footer>
   </body>
 </html>
