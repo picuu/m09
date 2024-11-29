@@ -33,7 +33,7 @@ svg {
   height: 100vh;
   width: 100vw;
   background-color: #000;
-  background: radial-gradient(#ffffff33 1px, #00091d 1px);
+  background: radial-gradient(#eeeeee22 1px, #000 1px);
   background-size: 22px 22px;
 }
 
@@ -50,6 +50,7 @@ header {
   padding-block: .8rem;
   background-color: rgba(255 255 255 / .1);
   backdrop-filter: blur(8px);
+  z-index: 999;
 }
 
 .header-content {
@@ -131,10 +132,85 @@ header search form {
 }
 
 .content-wrapper {
+  display: flex;
   padding-block: 6rem;
+}
+
+.navigation {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 225px;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2rem;
+  background-color: #000;
+  border-right: 1px solid rgba(255 255 255 / .2);
 }
 
 main {
   display: flex;
   justify-content: space-between;
+  gap: 4rem;
+  padding-left: 225px;
+}
+
+.main-content,
+.main-content > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-content {
+  gap: 4rem;
+}
+
+.section-content > article {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1rem;
+  background-color: rgba(255 255 255 / .075);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255 255 255 / .1);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px -4px rgba(255 255 255 / .1);
+}
+
+.tasks-progress .section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & article progress {
+    appearance: none;
+    border: none;
+    height: 10px;
+  }
+
+  & article progress::-webkit-progress-bar {
+    background-color: rgba(255 255 255 / .2);
+    border-radius: 999vw;
+  }
+
+  & article progress::-webkit-progress-value {
+    background-color: rgba(50 100 255 / .5);
+    border-radius: 999vw;
+    transition: background-color .3s ease-in-out, filter .3s ease-in-out;
+  }
+
+  & article:hover progress::-webkit-progress-value {
+    background-color: rgba(50 100 255 / .8);
+    filter: drop-shadow(0 0 25px rgba(50 100 255));
+  }
+  
+}
+
+.general-stats .section-content {
+  display: flex;
+  gap: 1.25rem;
 }
