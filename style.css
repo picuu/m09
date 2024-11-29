@@ -8,14 +8,133 @@
 }
 
 body {
+  position: relative;
+}
+
+body,
+input,
+button {
   font-family: system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.2;
 }
 
 svg {
-  --size: 24px;
+  --size: 20px;
 
   width: var(--size);
   height: var(--size);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  background: radial-gradient(#ffffff33 1px, #00091d 1px);
+  background-size: 22px 22px;
+}
+
+.header-content,
+.content-wrapper,
+footer nav {
+  width: calc(100% - 4rem);
+  margin-inline: auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding-block: .8rem;
+  background-color: rgba(255 255 255 / .1);
+  backdrop-filter: blur(8px);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & img {
+    --size: 40px;
+    
+    width: var(--size);
+    height: var(--size);
+  }
+}
+
+header search {
+  max-width: 300px;
+  width: 100%;
+}
+
+header search form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+
+  & input {
+    width: 100%;
+    padding: .65rem 1.25rem;
+    background-color: rgba(255 255 255 / .05);
+    border: 1px solid rgba(255 255 255 / .15);
+    outline: none;
+    border-radius: 999vw;
+    font-size: 15px;
+    color: #eee;
+  }
+
+  & button {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.header-content .user-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & .notifications-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  & .user-avatar {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    cursor: pointer;
+  }
+
+  & .user-avatar img {
+    --size: 32px;
+    
+    width: var(--size);
+    height: var(--size);
+    border-radius: 999vw;
+  }
+}
+
+.content-wrapper {
+  padding-block: 6rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
 }
