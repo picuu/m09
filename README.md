@@ -22,3 +22,9 @@ git clone --single-branch --branch activitats-html-semantic https://github.com/p
 ```bash
 git clone --single-branch --branch model-caixa https://github.com/picuu/m09
 ```
+
+- **[Activitat Flexbox](https://github.com/picuu/m09/tree/activitat-flexbox)**
+
+```bash
+git clone --single-branch --branch activitat-flexbox https://github.com/picuu/m09
+```
