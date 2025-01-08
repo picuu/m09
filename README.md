@@ -28,3 +28,9 @@ git clone --single-branch --branch model-caixa https://github.com/picuu/m09
 ```bash
 git clone --single-branch --branch activitat-flexbox https://github.com/picuu/m09
 ```
+
+- **[Maquetació amb Grid](https://github.com/picuu/m09/tree/maquetacio-grid)**
+
+```bash
+git clone --single-branch --branch maquetacio-grid https://github.com/picuu/m09
+```
