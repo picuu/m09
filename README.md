@@ -34,3 +34,9 @@ git clone --single-branch --branch activitat-flexbox https://github.com/picuu/m0
 ```bash
 git clone --single-branch --branch maquetacio-grid https://github.com/picuu/m09
 ```
+
+- **[Responsive bàsic](https://github.com/picuu/m09/tree/a1-responsive-basic)**
+
+```bash
+git clone --single-branch --branch a1-responsive-basic https://github.com/picuu/m09
+```
