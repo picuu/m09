@@ -1,9 +1,9 @@
-# Activitat Grid
+# Activitat 1 - Responsive bàsic
 
 Per clonar aquesta branca del repositori cal executar la següent comanda:
 
 ```bash
-git clone --single-branch --branch activitat-grid https://github.com/picuu/m09
+git clone --single-branch --branch a1-responsive-basic https://github.com/picuu/m09
 ```
 
 ## Com accedir a les activitats?

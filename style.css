@@ -9,7 +9,7 @@
 
 body {
   display: grid;
-  grid-template: 90px 1fr 60px / 250px 1fr;
+  grid-template: 90px 1fr 60px / 2fr 6fr;
   row-gap: 1rem;
   column-gap: .5rem;
   min-height: 100dvh;
@@ -56,4 +56,44 @@ main {
 
 .section3 > article {
   background-color: blue;
+}
+
+@media all and (width < 768px) {
+  main {
+    grid-template-rows: 75px 2fr 3fr;
+  }
+  
+  .section2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .section3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .section3 > article {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media all and (width < 576px) {
+  body {
+    grid-template-rows: 90px 90px 1fr 60px;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  main {
+    grid-template-rows: 75px 1fr 2fr;
+  }
+
+  .section2 > article {
+    max-height: 350px;
+  }
+
+  .section3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
