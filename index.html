@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Página de inicio - Itbflix</title>
+    <link rel="icon" href="./media/logos/netflix-symbol.png" type="image/png" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+
+    <meta name="author" content="Carlos Capó" />
+    <meta name="description" content="Netflix clone. Home page" />
+    <meta name="keywords" content="netflix, itb, peliculas, series, actores" />
+  </head>
+  <body>
+    <!------------ HEADER & NAV ------------>
+    <header class="main-header">
+      <img class="header-logo" src="./media/logos/netflix-logo.png" alt="Logotipo de Netflix" />
+
+      <nav id="nav">
+        <div class="nav-links">
+          <a href="#" class="active">Inicio</a>
+          <a href="#">Series</a>
+          <a href="#">Películas</a>
+          <a href="#">Novedades más vistas</a>
+          <a href="#">Mi lista</a>
+          <a href="#">Explorar por idiomas</a>
+        </div>
+
+        <div class="nav-utils">🔍 🔔 👤</div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="video-section">
+        <video autoplay muted id="video-player">
+          <source src="/media/trailers/el-camino-netflix-trailer.mp4" type="video/mp4" />
+        </video>
+
+        <img class="movie-banner hidden" id="movie-banner" src="/media/banners/el-camino-banner.jpg" alt="Jessy Pinkman en El Camino" />
+
+        <div class="video-info">
+          <img src="/media/el-camino-logo.webp" alt="Netflix Especial. El Camino: Una película de Breaking Bad" />
+          <p>
+            Convertido en fugitivo, Jesse Pinkman intenta escapar de su pasado. Escrita y dirigida por Vince Gilligan, creador de "Breaking Bad", y
+            protagonizada por Aaron Paul.
+          </p>
+        </div>
+      </section>
+
+      <section class="my-list-section">
+        <h2>Mi lista</h2>
+
+        <div class="section-content">
+          <article>
+            <img src="/media/thumbnails/shows/outer-banks.jpg" alt="Outer Banks" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/juego-del-calamar.jpg" alt="El Juego del Calamar" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/breaking-bad.webp" alt="Breaking Bad" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/interstellar.webp" alt="Interstellar" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/stranger-things.jpg" alt="Stranger Things" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/la-casa-de-papel.jpg" alt="La Casa de Papel" />
+          </article>
+        </div>
+      </section>
+
+      <section class="watch-next-section">
+        <h2>Para ver a continuación</h2>
+
+        <div class="section-content">
+          <article>
+            <img src="/media/thumbnails/films/dune.webp" alt="Dune" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/hasta-el-ultimo-hombre.webp" alt="Hasta el Último Hombre" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/fabricante-de-lagrimas.jpg" alt="El Fabricante de Lágrimas" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/focus.webp" alt="Focus" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/hermana-muerte.jpg" alt="Hermana Muerte" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/halloween-night.webp" alt="Noche de Halloween" />
+          </article>
+        </div>
+      </section>
+
+      <section class="most-popular-shows-section">
+        <h2>Las 6 series más populares hoy en este país: España</h2>
+
+        <div class="section-content">
+          <article>
+            <img src="/media/posters/shows/better-call-saul.jpg" alt="Better Call Saul" />
+          </article>
+
+          <article>
+            <img src="/media/posters/shows/how-to-sell-drugs-online.jpg" alt="Cómo vender drogas online (muy rápido)" />
+          </article>
+
+          <article>
+            <img src="/media/posters/shows/juego-del-calamar.jpg" alt="El Juego del Calamar" />
+          </article>
+
+          <article>
+            <img src="/media/posters/shows/mi-reno-de-peluche.jpg" alt="Mi Reno de Peluche" />
+          </article>
+
+          <article>
+            <img src="/media/posters/shows/dahmer.jpg" alt="Dahmmer" />
+          </article>
+
+          <article>
+            <img src="/media/posters/shows/the-end-of-the-fucking-world.jpg" alt="The End of the Fucking World" />
+          </article>
+        </div>
+      </section>
+
+      <section class="recommendations-section">
+        <h2>Recomendaciones de hoy para ti</h2>
+
+        <div class="section-content">
+          <article>
+            <img src="/media/thumbnails/films/la-conferencia.jpg" alt="La Conferencia" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/ni-una-mas.jpg" alt="Ni una más" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/malditos-bastardos.webp" alt="Malditos bastardos" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/nowhere.jpg" alt="Nowhere" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/lupin.jpg" alt="Lupin" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/peaky-blinders.jpg" alt="Peaky Blinders" />
+          </article>
+        </div>
+      </section>
+
+      <section class="news-section">
+        <h2>Novedades en Netflix</h2>
+
+        <div class="section-content">
+          <article>
+            <img src="/media/thumbnails/shows/el-vigilante.jpg" alt="El Vigilante" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/el-caso-asunta.jpg" alt="El caso Asunta" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/1917.webp" alt="1917" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/shows/monstruos-menendez.jpg" alt="Monstruos: la historia de los hermanos Menendez" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/el-camino.jpg" alt="El Camino" />
+          </article>
+
+          <article>
+            <img src="/media/thumbnails/films/sociedad-de-la-nieve.jpg" alt="La Sociedad de la Nieve" />
+          </article>
+        </div>
+      </section>
+
+      <section class="most-popular-films-section">
+        <h2>Las 6 películas más populares hoy en este país: España</h2>
+
+        <div class="section-content">
+          <article>
+            <img src="/media/posters/films/la-la-land.jpg" alt="La La Land" />
+          </article>
+
+          <article>
+            <img src="/media/posters/films/blade-runner.jpg" alt="Blade Runner 2046" />
+          </article>
+
+          <article>
+            <img src="/media/posters/films/matrix.jpg" alt="Matrix" />
+          </article>
+
+          <article>
+            <img src="/media/posters/films/oppenheimer.jpg" alt="Oppenheimer" />
+          </article>
+
+          <article>
+            <img src="/media/posters/films/sin-novedad-en-el-frente.jpg" alt="Sin novedad en el frente" />
+          </article>
+
+          <article>
+            <img src="/media/posters/films/lobo-wall-street.jpg" alt="El Lobo de Wall Street" />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer"></footer>
+  </body>
+</html>
