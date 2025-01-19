@@ -24,10 +24,6 @@
 
 html,
 body {
-  -webkit-font-smoothing: antialiased;
-  font-family: Netflix Sans, Helvetica Neue, system-ui, Segoe UI, Roboto, Ubuntu, sans-serif;
-  font-size: .75vw;
-  color: var(--text-color);
   user-select: none;
   scroll-behavior: smooth;
 }
@@ -35,6 +31,15 @@ body {
 body {
   position: relative;
   background-color: var(--bg-color);
+}
+
+html,
+body,
+button {
+  -webkit-font-smoothing: antialiased;
+  font-family: Netflix Sans, Helvetica Neue, system-ui, Segoe UI, Roboto, Ubuntu, sans-serif;
+  font-size: .75vw;
+  color: var(--text-color);
 }
 
 main {
@@ -145,9 +150,8 @@ main > section {
 }
 
 .video-section {
-  overflow: hidden;
-  height: calc(50dvh + 20vw);
-  padding: 12.5rem var(--padding-inline);
+  padding-block: 11rem 8rem;
+  padding-inline: var(--padding-inline);
 
   & video {
     mask-image: linear-gradient(black 0%, black 60%, transparent 95%) !important;
@@ -177,9 +181,10 @@ main > section {
   }
 
   & .video-info {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   & .video-info img {
@@ -192,6 +197,66 @@ main > section {
     font-weight: 450;
     line-height: 1.4;
     color: #fff;
+  }
+
+  & .video-info .actions-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  & .actions-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    padding-block: .8rem;
+    padding-inline: 2rem 2.4rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+  }
+
+  & .actions-buttons button .text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+
+  & .actions-buttons svg {
+    --size: 2.4rem;
+    width: var(--size);
+    height: var(--size);
+  }
+
+  & .actions-buttons .play-button:hover {
+    background-color: rgba(255 255 255 / .75);
+  }
+
+  & .actions-buttons .more-info-button {
+    background-color: rgba(109 109 110 / .7);
+    color: #fff;
+
+    &:hover {
+      background-color: rgba(100 100 100 / .5);
+    }
+  }
+
+  & .video-info::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    bottom: -45%;
+    background-color: #000;
+    width: 60%;
+    height: 100%;
+    opacity: .6;
+    filter: blur(45px);
+    z-index: -1;
   }
 }
 
