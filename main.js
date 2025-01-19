@@ -1,6 +1,6 @@
 function init() {
-  const TIME_TO_SHOW_BANNER = 5
-  const TIME_TO_HIDE_VIDEO = 5
+  const TIME_TO_SHOW_BANNER = 10
+  const TIME_TO_HIDE_VIDEO = 20
 
   showMovieBannerAfterTime(TIME_TO_SHOW_BANNER)
 
