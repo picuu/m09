@@ -780,7 +780,6 @@ main > section {
   
     & .nav-links {
       display: none;
-      /* transition: display 0ms 1s allow-discrete; */
     }
 
     & .nav-links-wrapper:hover .nav-links-content {
@@ -799,6 +798,13 @@ main > section {
       width: max-content;
       background-color: rgba(0 0 0 / .93);
       border-top: 2px solid #fff;
+      opacity: 1;
+
+      transition: opacity 300ms ease-in-out, display 300ms ease-in-out allow-discrete;
+
+      @starting-style {
+        opacity: 0;
+      }
     }
 
     & .nav-links-wrapper:hover .nav-links::before {
