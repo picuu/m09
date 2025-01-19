@@ -40,3 +40,9 @@ git clone --single-branch --branch maquetacio-grid https://github.com/picuu/m09
 ```bash
 git clone --single-branch --branch a1-responsive-basic https://github.com/picuu/m09
 ```
+
+- **[Repàs de maquetació per examen](https://github.com/picuu/m09/tree/repas-examen-maquetacio)** - Netflix clone
+
+```bash
+git clone --single-branch --branch repas-examen-maquetacio https://github.com/picuu/m09
+```
