@@ -286,7 +286,7 @@ main > section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius:  4px;
+    border-radius: .5rem;
   }
 }
 
@@ -323,8 +323,8 @@ main > section {
   &:hover .image-banner,
   &:hover .scene-preview {
     border-radius: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
   }
 
   &:hover .scene-preview-video-container {
@@ -412,8 +412,8 @@ main > section {
   gap: .75rem;
   width: 100%;
   background-color: #181818;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: .75rem;
+  border-bottom-right-radius: .75rem;
   padding: 1.5rem 1.25rem 1.75rem;
   margin-top: -.30rem;
   opacity: 0;
@@ -431,11 +431,13 @@ main > section {
   gap: .5rem;
 
   & button {
+    --size: 4.8rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    width: var(--size);
+    height: var(--size);
     aspect-ratio: 1 / 1;
     background-color: rgba(42 42 42 / .6);
     border: 2px solid hsla(0 0% 100% / .5);
@@ -451,7 +453,7 @@ main > section {
     }
 
     & > svg {
-      --size: 24px;
+      --size: 50%;
       width: var(--size);
       height: var(--size);
       color: #fff;
@@ -460,8 +462,10 @@ main > section {
   }
 
   & button.fill {
-    width: 42px;
-    height: 42px;
+    --size: 4.7rem;
+    
+    width: var(--size);
+    height: var(--size);
     background-color: #fff;
     border-style: none;
 
@@ -542,23 +546,24 @@ main > section {
   gap: .85rem;
 
   & .maturing-rating svg {
-    --size: 34px;
+    --size: 3.3rem;
     width: var(--size);
     height: var(--size);
     margin-top: 4px;
   }
 
   & .duration {
+    font-size: 1rem;
     color: rgba(255 255 255 / .7)
   }
 
   & .quality-badge {
-    padding: .5px 6px;
+    padding: .125rem .5rem;
     margin-top: 3px;
     border: 1px solid rgba(255 255 255 / .3);
     border-radius: 4px;
-    font-size: 12px;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1;
     color: #fff;
   }
 }
@@ -572,11 +577,12 @@ main > section {
     display: flex;
     align-items: center;
     gap: .75rem;
+    font-size: 1rem;
     color: #fff;
   }
 
   & .card-genre-item:not(:first-of-type)::before {
-    --size: 5px;
+    --size: .5em;
     
     content: '';
     width: var(--size);
@@ -618,6 +624,50 @@ main > section {
   .my-list-section .section-content {
     row-gap: .9rem;
     column-gap: .45rem;
+  }
+
+  .film-thumbnail:hover {
+    scale: 1.15;
+
+    & .preview-card-container .film-logo {
+      bottom: -10.25rem;
+      left: 2.25rem;
+    }
+
+    & .preview-card-content {
+      gap: 1rem;
+      padding: 2.25rem 2rem 2.5rem;
+      margin-top: -.5rem;
+    }
+
+    & .preview-card-content .card-actions {
+      gap: .75rem;
+    }
+
+    & .preview-card-content .card-meta-info {
+      gap: 1rem;
+    
+      & .maturing-rating svg {
+        --size: 3.9rem;
+      }
+    
+      & .duration {
+        font-size: 1.5rem;
+      }
+    
+      & .quality-badge {
+        font-size: 1.3rem;
+      }
+    }
+
+    & .preview-card-content .card-genre-list {
+      gap: 1.25rem;
+    
+      & .card-genre-item {
+        gap: 1.25rem;
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 
@@ -741,6 +791,8 @@ main > section {
   }
   
   .section {
+    gap: 1.35rem;
+    
     & h2 {
       font-size: 2.4vw;
     }
@@ -755,9 +807,57 @@ main > section {
     row-gap: 1.15rem;
     column-gap: .6rem;
   }
+
+  .film-thumbnail:hover {
+    scale: 1.1;
+    
+    & .preview-card-container .film-logo {
+      bottom: -13rem;
+      left: 2.5rem;
+      width: 45%;
+    }
+
+    & .preview-card-content {
+      gap: 1.25rem;
+      padding: 2.5rem 2.125rem 2.6rem;
+    }
+
+    & .preview-card-content .card-actions {
+      gap: 1.25rem;
+    }
+
+    & .preview-card-content .card-meta-info {
+      gap: 1.5rem;
+    
+      & .maturing-rating svg {
+        --size: 4.35rem;
+      }
+    
+      & .duration {
+        font-size: 1.75rem;
+      }
+    
+      & .quality-badge {
+        font-size: 1.5rem;
+      }
+    }
+
+    & .preview-card-content .card-genre-list {
+      gap: 1.5rem;
+    
+      & .card-genre-item {
+        gap: 1.5rem;
+        font-size: 1.75rem;
+      }
+    }
+  }
 }
 
 @media screen and (width < 576px) {
+  :root {
+    --padding-inline: 4.5rem;
+  }
+  
   html,
   body {
     font-size: 1.5vw;
@@ -792,8 +892,10 @@ main > section {
   }
   
   .section {
+    gap: 1.25rem;
+    
     & h2 {
-      font-size: 3rem;
+      font-size: 2.25rem;
     }
 
     & .section-content {
@@ -806,7 +908,54 @@ main > section {
     row-gap: 2.65rem;
   }
 
-  .section.big-thumbnails {
-    display: none;
+  .section.big-thumbnails .section-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .film-thumbnail:hover {
+    scale: 1.05;
+
+    & .preview-card-container .film-logo {
+      bottom: -17rem;
+      left: 2.65rem;
+    }
+
+    & .preview-card-content {
+      gap: 1.5rem;
+      padding: 2.75rem 2.25rem 2.85rem;
+    }
+
+    & .preview-card-content .card-actions {
+      gap: 1.35rem;
+
+      & button {
+        --size: 5.25rem;
+      }
+    }
+
+    & .preview-card-content .card-meta-info {
+      gap: 2rem;
+    
+      & .maturing-rating svg {
+        --size: 4.5rem;
+      }
+    
+      & .duration {
+        font-size: 2rem;
+      }
+    
+      & .quality-badge {
+        font-size: 1.65rem;
+      }
+    }
+
+    & .preview-card-content .card-genre-list {
+      gap: 2rem;
+    
+      & .card-genre-item {
+        gap: 2rem;
+        font-size: 2rem;
+      }
+    }
   }
 }
