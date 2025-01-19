@@ -706,6 +706,11 @@ main > section {
     column-gap: .45rem;
   }
 
+  .section.big-thumbnails .section-content {
+    grid-template-columns: repeat(6, 1fr);
+    gap: .5rem;
+  }
+
   .film-thumbnail:hover {
     scale: 1.15;
 
@@ -919,6 +924,11 @@ main > section {
   .my-list-section .section-content {
     row-gap: 1.15rem;
     column-gap: .6rem;
+  }
+
+  .section.big-thumbnails .section-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75rem;
   }
 
   .film-thumbnail:hover {
