@@ -598,8 +598,6 @@ main > section {
   }
 
   .video-section {
-    height: calc(30dvh + 25vw);
-
     & .video-info img {
       width: 50vw;
     }
@@ -727,20 +725,30 @@ main > section {
   }
 
   .video-section {
-    height: calc(20dvh + 25vw);
+    padding-bottom: 6rem;
+
+    & .video-info img {
+      width: 45vw;
+    }
 
     & .video-info p {
       font-size: 1.65rem;
     }
+
+    & .video-info .actions-buttons {
+      padding-top: 2rem;
+    }
   }
   
-  .section .section-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: .55rem;
-  }
-
-  .section h2 {
-    font-size: 2.4vw;
+  .section {
+    & h2 {
+      font-size: 2.4vw;
+    }
+    
+    & .section-content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: .55rem;
+    }
   }
 
   .my-list-section .section-content {
@@ -764,7 +772,7 @@ main > section {
   }
 
   .video-section {
-    height: calc(15dvh + 20vw);
+    padding-bottom: 5rem;
 
     & .video-info img {
       width: 47vw;
@@ -773,16 +781,26 @@ main > section {
     & .video-info p {
       display: none;
     }
+
+    & .actions-buttons button .text {
+      font-size: 1.4rem;
+    }
+
+    & .actions-buttons button svg {
+      --size: 2.2rem;
+    }
   }
   
-  .section .section-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+  .section {
+    & h2 {
+      font-size: 3rem;
+    }
 
-  .section h2 {
-    font-size: 3rem;
-  }
+    & .section-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  } 
 
   .my-list-section .section-content {
     row-gap: 2.65rem;
