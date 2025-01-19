@@ -24,8 +24,11 @@ function showMovieBannerAfterTime (seconds) {
 function listenVideoHover (video, timeToHide = 5) {
   const previewCardParent = video.parentElement.parentElement
   let videoPassedTimeToHide = false
+  const videoName = video.getAttribute('data-film-name')
+  const filmLogo = document.querySelector(`#${videoName}-logo`)
 
   const hideScenePreview = () => {
+    filmLogo.classList.add('hidden')
     video.pause()
     video.classList.add('hidden')
   }
@@ -47,7 +50,10 @@ function listenVideoHover (video, timeToHide = 5) {
 
   const handleMouseLeave = () => {
     video.pause()
-    video.classList.remove('hidden')
+    setTimeout(() => {
+      video.classList.remove('hidden')
+      filmLogo.classList.remove('hidden')
+    }, 500)
     video.removeEventListener('timeupdate', handleTimeUpdate)
   }
 

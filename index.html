@@ -35,7 +35,7 @@
 
     <main>
       <section class="video-section">
-        <video autoplay muted id="video-player">
+        <video autoplay muted preload="auto" id="video-player">
           <source src="/media/trailers/el-camino-netflix-trailer.mp4" type="video/mp4" />
         </video>
 
@@ -60,9 +60,13 @@
             <div class="preview-card-container">
               <img class="image-banner" src="/media/thumbnails/shows/outer-banks.jpg" alt="Outer Banks" />
 
-              <video class="scene-preview" autoplay muted>
-                <source src="/media/scenes/outer-banks-fight.mp4" type="video/mp4" />
-              </video>
+              <div class="scene-preview-video-container">
+                <img class="film-logo" id="outer-banks-logo" src="/media/logos/shows/outer-banks.webp" alt="Outer Banks" />
+
+                <video class="scene-preview" data-film-name="outer-banks" muted>
+                  <source src="/media/scenes/outer-banks-fight.mp4" type="video/mp4" />
+                </video>
+              </div>
 
               <div class="preview-card-content">
                 <menu class="card-actions">
@@ -165,9 +169,13 @@
             <div class="preview-card-container">
               <img class="image-banner" src="/media/thumbnails/shows/juego-del-calamar.jpg" alt="El Juego del Calamar" />
 
-              <video class="scene-preview" autoplay muted>
-                <source src="/media/scenes/squid-games.mp4" type="video/mp4" />
-              </video>
+              <div class="scene-preview-video-container">
+                <img class="film-logo" id="squid-games-logo" src="/media/logos/shows/squid-games.webp" alt="El Juego del Calamar" />
+
+                <video class="scene-preview" data-film-name="squid-games" muted>
+                  <source src="/media/scenes/squid-games.mp4" type="video/mp4" />
+                </video>
+              </div>
 
               <div class="preview-card-content">
                 <menu class="card-actions">
@@ -270,9 +278,13 @@
             <div class="preview-card-container">
               <img class="image-banner" src="/media/banners/small/breaking-bad.webp" alt="Breaking Bad" />
 
-              <video class="scene-preview" autoplay muted>
-                <source src="/media/scenes/breaking-bad-videotape.mp4" type="video/mp4" />
-              </video>
+              <div class="scene-preview-video-container">
+                <img class="film-logo" id="breaking-bad-logo" src="/media/logos/shows/breaking-bad.webp" alt="Breaking Bad" />
+
+                <video class="scene-preview" data-film-name="breaking-bad" muted>
+                  <source src="/media/scenes/breaking-bad-videotape.mp4" type="video/mp4" />
+                </video>
+              </div>
 
               <div class="preview-card-content">
                 <menu class="card-actions">
@@ -375,9 +387,13 @@
             <div class="preview-card-container">
               <img class="image-banner" src="/media/thumbnails/films/interstellar.webp" alt="Interstellar" />
 
-              <video class="scene-preview" autoplay muted>
-                <source src="/media/scenes/interstellar.mp4" type="video/mp4" />
-              </video>
+              <div class="scene-preview-video-container">
+                <img class="film-logo" id="interstellar-logo" src="/media/logos/films/interstellar.webp" alt="Interstellar" />
+
+                <video class="scene-preview" data-film-name="interstellar" muted>
+                  <source src="/media/scenes/interstellar.mp4" type="video/mp4" />
+                </video>
+              </div>
 
               <div class="preview-card-content">
                 <menu class="card-actions">
@@ -480,9 +496,13 @@
             <div class="preview-card-container">
               <img class="image-banner" src="/media/thumbnails/shows/stranger-things.jpg" alt="Stranger Things" />
 
-              <video class="scene-preview" autoplay muted>
-                <source src="/media/scenes/stranger-things.mp4" type="video/mp4" />
-              </video>
+              <div class="scene-preview-video-container">
+                <img class="film-logo" id="stranger-things-logo" src="/media/logos/shows/stranger-things.webp" alt="Stranger Things" />
+
+                <video class="scene-preview" data-film-name="stranger-things" muted>
+                  <source src="/media/scenes/stranger-things.mp4" type="video/mp4" />
+                </video>
+              </div>
 
               <div class="preview-card-content">
                 <menu class="card-actions">
@@ -585,9 +605,13 @@
             <div class="preview-card-container">
               <img class="image-banner" src="/media/thumbnails/shows/la-casa-de-papel.jpg" alt="La Casa de Papel" />
 
-              <video class="scene-preview" autoplay muted>
-                <source src="/media/scenes/la-casa-de-papel.mp4" type="video/mp4" />
-              </video>
+              <div class="scene-preview-video-container">
+                <img class="film-logo" id="casa-de-papel-logo" src="/media/logos/shows/casa-de-papel.webp" alt="La Casa de Papel" />
+
+                <video class="scene-preview" data-film-name="casa-de-papel" muted>
+                  <source src="/media/scenes/la-casa-de-papel.mp4" type="video/mp4" />
+                </video>
+              </div>
 
               <div class="preview-card-content">
                 <menu class="card-actions">
