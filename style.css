@@ -309,6 +309,13 @@ main > section {
   transform-origin: 50% 100%;
   transition: scale 200ms ease-in, z-index 0ms 300ms;
 
+  &:nth-child(6n + 1) {
+    transform-origin: 0 100%;
+  }
+
+  &:nth-child(6n) {
+    transform-origin:100% 100%;
+  }
 
   &:hover {
     scale: 1.4;
@@ -711,8 +718,18 @@ main > section {
     gap: .5rem;
   }
 
-  .film-thumbnail:hover {
-    scale: 1.15;
+  .film-thumbnail {
+    &:nth-child(3n + 1) {
+      transform-origin: 0 100%;
+    }
+  
+    &:nth-child(3n) {
+      transform-origin:100% 100%;
+    }
+  
+    &:hover {
+      scale: 1.17;
+    }
 
     & .preview-card-container .film-logo {
       bottom: -10.25rem;
@@ -937,8 +954,18 @@ main > section {
     gap: .75rem;
   }
 
-  .film-thumbnail:hover {
-    scale: 1.1;
+  .film-thumbnail {
+    &:nth-child(2n + 1) {
+      transform-origin: 0 100%;
+    }
+  
+    &:nth-child(2n) {
+      transform-origin:100% 100%;
+    }
+  
+    &:hover {
+      scale: 1.12;
+    }
 
     & .preview-card-container .film-logo {
       bottom: -13rem;
@@ -1043,8 +1070,12 @@ main > section {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .film-thumbnail:hover {
-    scale: 1.05;
+  .film-thumbnail {
+      transform-origin: 50% 100% !important;
+  
+    &:hover {
+      scale: 1.05;
+    }
 
     & .preview-card-container .film-logo {
       bottom: -17rem;
