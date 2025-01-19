@@ -26,6 +26,7 @@ html,
 body {
   user-select: none;
   scroll-behavior: smooth;
+  scroll-padding: 8rem;
 }
 
 body {

@@ -14,7 +14,7 @@
     <meta name="description" content="Netflix clone. Home page" />
     <meta name="keywords" content="netflix, itb, peliculas, series, actores" />
   </head>
-  <body>
+  <body id="home">
     <!------------ HEADER & NAV ------------>
     <header class="main-header">
       <img class="header-logo" src="./media/logos/netflix-logo.png" alt="Logotipo de Netflix" />
@@ -30,11 +30,11 @@
             <span class="separation"></span>
 
             <div class="nav-links">
-              <a href="#" class="active">Inicio</a>
-              <a href="#">Series</a>
-              <a href="#">Películas</a>
-              <a href="#">Novedades más vistas</a>
-              <a href="#">Mi lista</a>
+              <a href="#home" class="active">Inicio</a>
+              <a href="#shows">Series</a>
+              <a href="#films">Películas</a>
+              <a href="#news">Novedades más vistas</a>
+              <a href="#my-list">Mi lista</a>
               <a href="#">Explorar por idiomas</a>
             </div>
           </div>
@@ -110,7 +110,7 @@
         </div>
       </section>
 
-      <section class="my-list-section section small-thumbnails">
+      <section class="my-list-section section small-thumbnails" id="my-list">
         <h2>Mi lista</h2>
 
         <div class="section-content">
@@ -800,7 +800,7 @@
         </div>
       </section>
 
-      <section class="most-popular-shows-section section big-thumbnails">
+      <section class="most-popular-shows-section section big-thumbnails" id="shows">
         <h2>Las 6 series más populares hoy en este país: España</h2>
 
         <div class="section-content">
@@ -860,7 +860,7 @@
         </div>
       </section>
 
-      <section class="news-section section small-thumbnails">
+      <section class="news-section section small-thumbnails" id="news">
         <h2>Novedades en Netflix</h2>
 
         <div class="section-content">
@@ -890,7 +890,7 @@
         </div>
       </section>
 
-      <section class="most-popular-films-section section big-thumbnails">
+      <section class="most-popular-films-section section big-thumbnails" id="films">
         <h2>Las 6 películas más populares hoy en este país: España</h2>
 
         <div class="section-content">
