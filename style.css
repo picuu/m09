@@ -47,13 +47,14 @@ main > section {
   display: flex;
   gap: 2.8rem;
   width: 100%;
-  padding: 1.35rem var(--padding-inline);
+  padding: 1.3rem var(--padding-inline) 1.2rem;
   background-color: rgba(0 0 0 / 0.25);
   backdrop-filter: blur(10px);
   z-index: 999;
 
   & img {
     width: 92.5px;
+    height: 25px;
   }
 
   & nav {
@@ -67,7 +68,11 @@ main > section {
   & .nav-utils {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.4rem;
+  }
+
+  & .nav-links {
+    padding-bottom: .25rem;
   }
   
   & .nav-links a {
@@ -80,6 +85,53 @@ main > section {
 
   & .nav-links a.active {
     font-weight: 650;
+  }
+
+  & .nav-utils {
+    align-items: end;
+  }
+
+  & .nav-utils button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: transform 367ms cubic-bezier(.21, 0, .07, 1);
+  }
+
+  & .nav-utils button.expandible:focus {
+    transform: scale(1.2);
+  }
+
+  & .nav-utils button svg {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+    color: #fff;
+  }
+
+  & .nav-utils button img {
+    --size: 30px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 4px;
+  }
+
+  & .nav-utils .profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+  }
+
+  & .nav-utils .dropdown-icon {
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    height: 0;
+    margin-left: 10px;
+    transition: transform 367ms cubic-bezier(.21,0,.07,1);
+    width: 0;
   }
 }
 
