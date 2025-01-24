@@ -46,3 +46,9 @@ git clone --single-branch --branch a1-responsive-basic https://github.com/picuu/
 ```bash
 git clone --single-branch --branch repas-examen-maquetacio https://github.com/picuu/m09
 ```
+
+- **[Galeria de fotos interactiva i responsive](https://github.com/picuu/m09/tree/galeria-fotos-responsive)**
+
+```bash
+git clone --single-branch --branch galeria-fotos-responsive https://github.com/picuu/m09
+```
