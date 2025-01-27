@@ -1,0 +1,418 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #111;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  padding-block: 1rem;
+  background-color: #fff;
+  z-index: 999;
+
+  & .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1450px, 100% - 4rem);
+    margin-inline: auto;
+  }
+
+  & img {
+    width: 5vw;
+  }
+
+  & .nav-links-mobile {
+    display: none;
+  }
+
+  & nav {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+  }
+  
+  & nav a {
+    padding: .4rem .65rem;
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: .5px;
+    transition: color 150ms ease-in-out, filter 150ms ease-in-out;
+
+    &:hover {
+      color: purple;
+      filter: drop-shadow(0 0 20px purple);
+    }
+  }
+
+  & nav a.active {
+    font-weight: 650;
+  }
+
+  & .dropdown-icon {
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    height: 0;
+    margin-left: 10px;
+    transition: transform 367ms cubic-bezier(.21,0,.07,1);
+    width: 0;
+  }
+}
+
+main > section {
+  margin-bottom: 4rem;
+  /* width: min(1450px, 100% - 4rem); */
+  /* margin-inline: auto; */
+  /* padding-top: 6rem; */
+
+  & section {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.welcome-section {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  background: url("./img/Festival5.jpg.jpg");
+  background-size: 100%;
+
+  & h1 {
+    padding: 1.25rem 3.5rem;
+    background-color: rgba(0 0 0 / .4);
+    font-size: 6.5rem;
+    color: #fff;
+  }
+}
+
+.info-section {
+  width: min(1450px, 100% - 4rem);
+  margin-inline: auto;
+
+  & h2 {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+
+  & > .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+section.event-description {
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  & > .section-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+  }
+
+  & .section-content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+  }
+
+  & .section-content .text p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    max-width: 80ch;
+  }
+
+  & .section-content .buy-tickets-button {
+    width: fit-content;
+    padding: .75rem 1.5rem;
+    margin-top: 2rem;
+    background-color: greenyellow;
+    border: none;
+    border-radius: .4rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.03) rotate(-2deg);
+    }
+  }
+}
+
+section.date-location {
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  & > .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  & .event-dates p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    font-size: 1.5rem;
+  }
+
+  & .event-dates .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25rem;
+    padding: .5rem;
+    background-color: greenyellow;
+  }
+
+  & .event-dates .date-day {
+    font-size: 3.5rem;
+  }
+
+  & .event-dates .date-month {
+    font-size: .975rem;
+  }
+
+  & .event-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .event-location p {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-size: 1.5rem;
+  }
+
+  & .event-location .location-name {
+    padding: .5rem 1rem;
+    background-color: greenyellow;
+    font-weight: 500;
+    transform: rotate(2deg);
+  }
+}
+
+section.music-genres {
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  & > .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  & .genres-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    list-style: none;
+  }
+
+  & .genres-list .genre-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  & .genres-list .genre-group li {
+    font-size: 1.5rem;
+    text-decoration: underline greenyellow 4px;
+    text-decoration-skip-ink: none;
+    text-align: center;
+  }
+
+  & .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  & .images img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.artists-section {
+  padding-block: 3rem 4rem;
+  background-color: rgba(173 255 47 / .25);
+  
+  & .section-wrapper {
+    width: min(1450px, 100% - 4rem);
+    margin-inline: auto;
+  }
+  
+  & h2 {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+
+  & .section-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  & .section-content img {
+    width: 100%;
+    height: 100%;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.video-section {
+  width: min(1450px, 100% - 4rem);
+  margin-inline: auto;
+
+  & h2 {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+
+  & .section-content {
+    display: grid;
+    place-items: center;
+  }
+
+  & .section-content img {
+    width: 100%;
+    height: 100%;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.contact-section {
+  width: min(1450px, 100% - 4rem);
+  margin-inline: auto;
+
+  & h2 {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+
+  & .section-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  & .section-content form .form-group {
+    display: flex;
+    gap: 3rem;
+  }
+
+  & .section-content form label {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+
+  & .section-content form input,
+  & .section-content form textarea {
+    width: fit-content;
+    padding: .5rem 1rem;
+    background-color: rgba(173 255 47 / .1);
+    border: 1px solid rgba(173 255 47);
+    outline: none;
+  }
+
+  & .section-content form textarea {
+    width: 600px;
+    height: 6rem;
+    max-height: 200px;
+    resize: vertical;
+  }
+
+  & .section-content form button {
+    width: fit-content;
+    padding: .75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: greenyellow;
+    border: none;
+    border-radius: .4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: rgb(136, 209, 27);
+    }
+  }
+}
+
+.main-footer {
+  padding: 1rem;
+  background-color: #777;
+
+  & .footer-content {
+    width: min(1450px, 100% - 4rem);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  & .footer-networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+}
+
+@media screen and (width < 1200px) {
+  .artists-section {
+    & .section-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (width < 768px) {
+  .artists-section {
+    & .section-content {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

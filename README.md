@@ -1,48 +1,19 @@
-# Repositori d'activitats i treballs del mòdul 19 - Disseny d'interfícies web
+# Proba pràctica UF1
+
+Per clonar aquesta branca del repositori cal executar la següent comanda:
+
+```bash
+git clone --single-branch --branch proba-practica-uf1 https://github.com/picuu/m09
+```
 
 ## Com accedir a les activitats?
 
 El repositori conté una branca per cada activitat realitzada. Per accedir a les activitats, cal seleccionar la branca corresponent a l'activitat que es vol consultar.
 
-A continuació, es detallen les branques corresponents a cada activitat.
+[Enllaç a la branca principal, amb l'index complert de totes les activitats](https://github.com/picuu/m09)
 
-## Branques per activitat
+## Més info
 
-> [!NOTE]
-> Devall del link de cada branca, es trobara la comanda a executar per clonar aquella branca del repositori
+Podeu veure la web desplegada a [Netlify: https://itb-n3tflix-clone.netlify.app](https://itb-n3tflix-clone.netlify.app/).
 
-- **[Activitat HTML semàntic](https://github.com/picuu/m09/tree/activitats-html-semantic)**
-
-```bash
-git clone --single-branch --branch activitats-html-semantic https://github.com/picuu/m09
-```
-
-- **[Exercicis Model Caixa](https://github.com/picuu/m09/tree/model-caixa)**
-
-```bash
-git clone --single-branch --branch model-caixa https://github.com/picuu/m09
-```
-
-- **[Activitat Flexbox](https://github.com/picuu/m09/tree/activitat-flexbox)**
-
-```bash
-git clone --single-branch --branch activitat-flexbox https://github.com/picuu/m09
-```
-
-- **[Maquetació amb Grid](https://github.com/picuu/m09/tree/maquetacio-grid)**
-
-```bash
-git clone --single-branch --branch maquetacio-grid https://github.com/picuu/m09
-```
-
-- **[Responsive bàsic](https://github.com/picuu/m09/tree/a1-responsive-basic)**
-
-```bash
-git clone --single-branch --branch a1-responsive-basic https://github.com/picuu/m09
-```
-
-- **[Repàs de maquetació per examen](https://github.com/picuu/m09/tree/repas-examen-maquetacio)** - Netflix clone
-
-```bash
-git clone --single-branch --branch repas-examen-maquetacio https://github.com/picuu/m09
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0df1343c-988b-40d2-8559-69e75c204955/deploy-status)](https://app.netlify.com/sites/itb-n3tflix-clone/deploys)
