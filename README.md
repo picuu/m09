@@ -64,3 +64,9 @@ git clone --single-branch --branch proba-practica-uf1 https://github.com/picuu/m
 ```bash
 git clone --single-branch --branch activitat-inicial-bootstrap https://github.com/picuu/m09
 ```
+
+- **[Activitats Bootstrap 1 - 3](https://github.com/picuu/m09/tree/activitats-bootstrap-2)**
+
+```bash
+git clone --single-branch --branch activitats-bootstrap-2 https://github.com/picuu/m09
+```
