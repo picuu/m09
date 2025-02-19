@@ -82,3 +82,15 @@ git clone --single-branch --branch bootstrap-formulari-botons https://github.com
 ```bash
 git clone --single-branch --branch bootstrap-exercicis-botons https://github.com/picuu/m09
 ```
+
+- **[Activitats Bootstrap](https://github.com/picuu/m09/tree/bootstrap-exercicis-cards)** - Exercicis de cards
+
+```bash
+git clone --single-branch --branch bootstrap-exercicis-cards https://github.com/picuu/m09
+```
+
+- **[Activitats Bootstrap](https://github.com/picuu/m09/tree/bootstrap-blog-cards)** - Blog de noticies amb cards
+
+```bash
+git clone --single-branch --branch bootstrap-blog-cards https://github.com/picuu/m09
+```
