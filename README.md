@@ -94,3 +94,9 @@ git clone --single-branch --branch bootstrap-exercicis-cards https://github.com/
 ```bash
 git clone --single-branch --branch bootstrap-blog-cards https://github.com/picuu/m09
 ```
+
+- **[Activitats Bootstrap](https://github.com/picuu/m09/tree/bootstrap-exercicis-progress-bar)** - Exercicis de progress bar
+
+```bash
+git clone --single-branch --branch bootstrap-exercicis-progress-bar https://github.com/picuu/m09
+```
