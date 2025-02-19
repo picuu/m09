@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Activitat Bootstrap - Creació d'un blog amb cards</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="mb-3">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark px-5" role="navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="navbar-brand">Notícies DAWe 2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Darreres notícies</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Categoríes</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contacte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <h1 class="mb-5">Notícies DAWe2</h1>
+
+      <section class="mb-5">
+        <h2 class="mb-3">Posts destacats</h2>
+
+        <div class="mb-2 d-flex gap-3">
+          <article class="card col-md-3 col-sm-2 col">
+            <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png" class="card-img-top" alt="Imatge de prova" />
+
+            <div class="card-body">
+              <h5 class="card-title">Card amb Imatge</h5>
+              <p class="card-text">Això és una card de Bootstrap 5 amb una imatge a dalt.</p>
+              <a href="#" class="btn btn-outline-primary">Veure més</a>
+            </div>
+          </article>
+
+          <article class="card col-md-3 col-sm-2 col">
+            <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png" class="card-img-top" alt="Imatge de prova" />
+
+            <div class="card-body">
+              <h5 class="card-title">Card amb Imatge</h5>
+              <p class="card-text">Això és una card de Bootstrap 5 amb una imatge a dalt.</p>
+              <a href="#" class="btn btn-outline-primary">Veure més</a>
+            </div>
+          </article>
+
+          <article class="card col-md-3 col-sm-2 col">
+            <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png" class="card-img-top" alt="Imatge de prova" />
+
+            <div class="card-body">
+              <h5 class="card-title">Card amb Imatge</h5>
+              <p class="card-text">Això és una card de Bootstrap 5 amb una imatge a dalt.</p>
+              <a href="#" class="btn btn-outline-primary">Veure més</a>
+            </div>
+          </article>
+
+          <article class="card col-md-3 col-sm-2 col">
+            <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png" class="card-img-top" alt="Imatge de prova" />
+
+            <div class="card-body">
+              <h5 class="card-title">Card amb Imatge</h5>
+              <p class="card-text">Això és una card de Bootstrap 5 amb una imatge a dalt.</p>
+              <a href="#" class="btn btn-outline-primary">Veure més</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="mb-3">Darreres notícies</h2>
+
+        <div class="mb-2">
+          <div class="card-group">
+            <article class="card">
+              <img src="https://wpdean.com/wp-content/uploads/2024/05/what-is-bootstrap.jpg" class="card-img-top" alt="Imatge" />
+              <div class="card-body">
+                <h5 class="card-title">Card 1</h5>
+                <p class="card-text">Text descriptiu de la primera card.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-icons.png" class="card-img-top" alt="Imatge" />
+              <div class="card-body">
+                <h5 class="card-title">Card 2</h5>
+                <p class="card-text">Text descriptiu de la segona card.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/descubre-los-5-pasos-para-instalar-bootstrap-en-laravel.jpg"
+                class="card-img-top"
+                alt="Imatge"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card 3</h5>
+                <p class="card-text">Text descriptiu de la tercera card.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-icons.png" class="card-img-top" alt="Imatge" />
+              <div class="card-body">
+                <h5 class="card-title">Card 4</h5>
+                <p class="card-text">Text descriptiu de la quarta card.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://wpdean.com/wp-content/uploads/2024/05/what-is-bootstrap.jpg" class="card-img-top" alt="Imatge" />
+              <div class="card-body">
+                <h5 class="card-title">Card 5</h5>
+                <p class="card-text">Text descriptiu de la cinquena card.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="d-flex gap-5">
+        <section class="mb-5">
+          <h2 class="mb-3">Categoríes</h2>
+
+          <div class="mb-2 d-flex gap-3">
+            <article class="card" style="width: 18rem">
+              <header class="card-header">Categoríes més consultades</header>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Categoría 1</li>
+                <li class="list-group-item">Categoría 2</li>
+                <li class="list-group-item">Categoría 3</li>
+                <li class="list-group-item">Categoría 4</li>
+                <li class="list-group-item">Categoría 5</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="mb-5 ms-auto w-50">
+          <h2 class="mb-3">Newsletter</h2>
+
+          <div class="mb-2">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correu electrònic</label>
+                <input type="email" class="form-control" id="email" placeholder="elteuemail@gmail.com" />
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkTerms" />
+                <label class="form-check-label" for="checkTerms">Acepto els termes i condicions</label>
+              </div>
+
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-dark py-3 border-top">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-light">© 2025 Notícies DAWe 2</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-light" href="#">Twitter</a></li>
+          <li class="ms-3"><a class="text-light" href="#">Instagram</a></li>
+          <li class="ms-3"><a class="text-light" href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
