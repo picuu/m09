@@ -100,3 +100,9 @@ git clone --single-branch --branch bootstrap-blog-cards https://github.com/picuu
 ```bash
 git clone --single-branch --branch bootstrap-exercicis-progress-bar https://github.com/picuu/m09
 ```
+
+- **[Activitats Bootstrap](https://github.com/picuu/m09/tree/bootstrap-web-esdeveniments)** - Web esdeveniments
+
+```bash
+git clone --single-branch --branch bootstrap-web-esdeveniments https://github.com/picuu/m09
+```
