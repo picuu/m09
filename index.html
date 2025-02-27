@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Activitat Bootstrap - Web de còmics</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>Acerca de</h4>
+              <p class="text-body-secondary">
+                Agrega información sobre el álbum a continuación, el autor o cualquier otro contexto de fondo. Haz algunas oraciones largas para que
+                la gente pueda captar algunos datos informativos. Luego, vincúlalos a algunos sitios de redes sociales o información de contacto.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Contacto</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Twitter</a></li>
+                <li><a href="#" class="text-white">Facebook</a></li>
+                <li><a href="#" class="text-white">Ig (i guess)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+            <strong>Álbum de canciones (PEC)</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Álbum de canciones</h1>
+            <p class="lead text-body-secondary">
+              Aquí podrás encontrar un álbum de canciones de tres grupos de música diferentes; Radiohead, Pixies y X. Los tres grupos tienen un estilo
+              parecido y han sido muy influyentes en la música de los últimos 30 años.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary my-2">Llamado a la acción principal</a>
+              <a href="#" class="btn btn-secondary my-2">Acción secundaria</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Marcador de posición: Miniatura"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Marcador de posición</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Miniatura</text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    Esta es una tarjeta más amplia con texto de respaldo a continuación como introducción natural al contenido adicional. Este
+                    contenido es un poco más largo.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p class="mb-1">El ejemplo del álbum es © Bootstrap, ¡pero descárgalo y personalízalo tú mismo!</p>
+        <p class="mb-0">
+          ¿Nuevo en Bootstrap? <a href="/">Visita la página de inicio</a> o lee nuestra
+          <a href="/docs/5.3/getting-started/introduction/">guía de introducción</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
