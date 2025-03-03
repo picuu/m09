@@ -16,36 +16,29 @@ El repositori conté una branca per cada activitat realitzada. Per accedir a les
 
 ### Radiohead
 
-- [Creep](https://www.youtube.com/watch?v=XFkzRNyygfk)
-- [Karma Police](https://www.youtube.com/watch?v=IBH97ma9YiI)
-- [No Surprises](https://www.youtube.com/watch?v=u5CVsCnxyXg)
-- [Let Down](https://www.youtube.com/watch?v=ZPAmDULCVrU)
-- [Paranoid Android](https://www.youtube.com/watch?v=fHiGbolFFGw)
-- [Street Spirit (Fade Out)](https://www.youtube.com/watch?v=LCJblaUkkfc)
+- [Creep](https://youtu.be/XFkzRNyygfk)
+- [Karma Police](https://youtu.be/1uYWYWPc9HU)
+- [Let Down](https://youtu.be/ZVgHPSyEIqk)
+<!-- - [No Surprises](https://www.youtube.com/watch?v=u5CVsCnxyXg) -->
 
 ### Pixies
 
-- [Where is my mind?](https://www.youtube.com/watch?v=RCD14IrOcIs)
-- [All I think about now](https://www.youtube.com/watch?v=JbJZ5jFJ2zA)
-- [Debaser](https://www.youtube.com/watch?v=7J7u1J3m1jI)
-- [Gigantic](https://www.youtube.com/watch?v=6d8vTQjC2Jw)
-- [Here Comes](https://www.youtube.com/watch?v=K1b8AhIsSYQ)
-- [Monkey Gone to Heaven](https://www.youtube.com/watch?v=7C7fAW7I7Hk)
+- [Where Is My Mind?](https://youtu.be/OJ62RzJkYUo)
+- [All I Think About Now](https://youtu.be/7Nf8o-qhO2g)
+- [On Graveyard Hill](https://youtu.be/E2o-65chdoc)
 
 ### Deftones
 
-- [Change (In the House of Flies)](https://www.youtube.com/watch?v=4U9ZK3aZ7eE)
-- [My Own Summer (Shove It)](https://www.youtube.com/watch?v=XOzs1FehYOA)
-- [Be Quiet and Drive (Far Away)](https://www.youtube.com/watch?v=1tJv4X4fddM)
-- [Digital Bath](https://www.youtube.com/watch?v=3v6N2Uq2bYk)
-- [Minerva](https://www.youtube.com/watch?v=8GorUgk_3uY)
+- [Change (In the House of Flies)](https://youtu.be/WPpDyIJdasg)
+- [My Own Summer (Shove It)](https://youtu.be/XOzs1FehYOA)
+- [Be Quiet and Drive (Far Away)](https://youtu.be/KvknOXGPzCQ)
 
 ## Songs I already have the cover downloaded
 
 - Creep
 - Karma Police
-- No Surprises
 - Let Down
+- No Surprises
 
 - Where is my mind?
 - All I think about now
