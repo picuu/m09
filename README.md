@@ -106,3 +106,9 @@ git clone --single-branch --branch bootstrap-exercicis-progress-bar https://gith
 ```bash
 git clone --single-branch --branch bootstrap-web-esdeveniments https://github.com/picuu/m09
 ```
+
+- **[Activitats Bootstrap](https://github.com/picuu/m09/tree/bootstrap-web-comics)** - Web de còmics (en el meu cas, de cançons)
+
+```bash
+git clone --single-branch --branch bootstrap-web-comics https://github.com/picuu/m09
+```
