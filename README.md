@@ -19,7 +19,6 @@ El repositori conté una branca per cada activitat realitzada. Per accedir a les
 - [Creep](https://youtu.be/XFkzRNyygfk)
 - [Karma Police](https://youtu.be/1uYWYWPc9HU)
 - [Let Down](https://youtu.be/ZVgHPSyEIqk)
-<!-- - [No Surprises](https://www.youtube.com/watch?v=u5CVsCnxyXg) -->
 
 ### Pixies
 
@@ -32,17 +31,3 @@ El repositori conté una branca per cada activitat realitzada. Per accedir a les
 - [Change (In the House of Flies)](https://youtu.be/WPpDyIJdasg)
 - [My Own Summer (Shove It)](https://youtu.be/XOzs1FehYOA)
 - [Be Quiet and Drive (Far Away)](https://youtu.be/KvknOXGPzCQ)
-
-## Songs I already have the cover downloaded
-
-- Creep
-- Karma Police
-- Let Down
-- No Surprises
-
-- Where is my mind?
-- All I think about now
-
-- Change (In the House of Flies)
-- My Own Summer (Shove It)
-- Be Quiet and Drive (Far Away)
