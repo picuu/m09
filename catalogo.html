@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Activitat Bootstrap - Web de còmics</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-2 px-3 px-sm-0 pb-0" role="navigation">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a href="#" class="navbar-brand">Menú de navegación</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="./catalogo.html" class="nav-link">Catálogo</a></li>
+                <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="me-2"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M9 17v-13h10v13" />
+              <path d="M9 8h10" />
+            </svg>
+            <strong>Álbum de canciones (PEC)</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Catálogo</h1>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <section>
+            <h2 class="mb-2" id="radiohead">Radiohead</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4">
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/radiohead/creep.jpeg" alt="Creep" class="card-img-top" />
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-warning w-75 text-dark" role="progressbar">2:59</div>
+                    </div>
+                    <h3 class="card-title">Creep</h3>
+                    <p class="card-text">Canción del album <strong>Pablo Honey</strong>. Se estrenó en <strong>1993</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/XFkzRNyygfk" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">3:58 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/radiohead/karma-police.jpeg" alt="Karma Police" class="card-img-top" />
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-primary w-75 text-light" role="progressbar">3:30</div>
+                    </div>
+                    <h3 class="card-title">Karma Police</h3>
+                    <p class="card-text">Canción del album <strong>OK Computer</strong>. Se estrenó en <strong>1997</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/1uYWYWPc9HU" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">4:24 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/radiohead/let-down.jpeg" alt="Let Down" class="card-img-top" />
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-primary-subtle w-25 text-dark" role="progressbar">1:15</div>
+                    </div>
+                    <h3 class="card-title">Let Down</h3>
+                    <p class="card-text">Canción del album <strong>OK Computer</strong>. Se estrenó en <strong>1997</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/ZVgHPSyEIqk" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">4:59 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="mb-2" id="pixies">Pixies</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4">
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/pixies/where-is-my-mind.jpg" alt="Whre Is My Mind?" class="card-img-top" />
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-success w-25 text-light" role="progressbar">0:57</div>
+                    </div>
+                    <h3 class="card-title">Whre Is My Mind?</h3>
+                    <p class="card-text">
+                      Canción del album <strong>Surfer Rosa (2007 Remaster)</strong>. Se estrenó originalmente en <strong>1988</strong>.
+                    </p>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/OJ62RzJkYUo" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">3:50 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/pixies/all-i-think-about-now.jpeg" alt="All I think about now" class="card-img-top" />
+
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-danger w-50 text-light" role="progressbar">1:34</div>
+                    </div>
+                    <h3 class="card-title">All I think about now</h3>
+                    <p class="card-text">Canción del album <strong>Head Carrier</strong>. Se estrenó en el año <strong>2016</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/7Nf8o-qhO2g" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">3:08 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/pixies/on-graveyard-hill.jpeg" alt="On Graveyard Hill" class="card-img-top" />
+
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-dark w-50 text-light" role="progressbar">1:43</div>
+                    </div>
+                    <h3 class="card-title">On Graveyard Hill</h3>
+                    <p class="card-text">Canción del album <strong>Beneath The Eyrie</strong>. Se estrenó en <strong>2019</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/E2o-65chdoc" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">3:26 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="mb-2" id="deftones">Deftones</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4">
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/deftones/change.jpeg" alt="Change (In the House of Flies)" class="card-img-top" />
+
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-dark w-75 text-light" role="progressbar">3:44</div>
+                    </div>
+                    <h3 class="card-title">Change (In the House of Flies)</h3>
+                    <p class="card-text">Canción del album <strong>White Pony</strong>. Se estrenó en el <strong>2000</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/WPpDyIJdasg" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">4:59 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/deftones/my-own-summer.jpeg" alt="My Own Summer (Shove It)" class="card-img-top" />
+
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-secondary w-25 text-light" role="progressbar">0:53</div>
+                    </div>
+                    <h3 class="card-title">My Own Summer (Shove It)</h3>
+                    <p class="card-text">Canción del album <strong>Around the Fur</strong>. Se estrenó en <strong>1997</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/XOzs1FehYOA" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">3:34 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/deftones/be-quiet-and-drive.jpg" alt="Be Quiet and Drive (Far Away)" class="card-img-top" />
+
+                  <div class="card-body">
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-primary-subtle w-50 text-dark" role="progressbar">2:28</div>
+                    </div>
+                    <h3 class="card-title">Be Quiet and Drive (Far Away)</h3>
+                    <p class="card-text">Canción del album <strong>Around the Fur</strong>. Se estrenó en <strong>1997</strong>.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://youtu.be/KvknOXGPzCQ" target="_blank" class="btn btn-sm btn-outline-secondary">Escuchar</a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button>
+                      </div>
+                      <small class="text-body-secondary">4:59 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p class="mb-1">El ejemplo del álbum es © Bootstrap, ¡pero descárgalo y personalízalo tú mismo!</p>
+        <p class="mb-0">
+          ¿Nuevo en Bootstrap? <a href="/">Visita la página de inicio</a> o lee nuestra
+          <a href="/docs/5.3/getting-started/introduction/">guía de introducción</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
