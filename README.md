@@ -112,3 +112,9 @@ git clone --single-branch --branch bootstrap-web-esdeveniments https://github.co
 ```bash
 git clone --single-branch --branch bootstrap-web-comics https://github.com/picuu/m09
 ```
+
+- **[Examen Bootstrap](https://github.com/picuu/m09/tree/carlos-examen-uf2)** - Prova pràctica UF2
+
+```bash
+git clone --single-branch --branch carlos-examen-uf2 https://github.com/picuu/m09
+```
